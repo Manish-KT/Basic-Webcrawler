@@ -1,0 +1,17 @@
+# import builtwith
+%pip install builtwith
+
+# Identifying the technology used by a website
+    import builtwith as bw
+    bw.parse("https://towardsdatascience.com/how-to-build-a-simple-web-crawler-66082fc82470")
+
+# Finding the owner of a website
+    # %pip install python-whois
+    import whois
+    print(whois.whois("https://towardsdatascience.com/how-to-build-a-simple-web-crawler-66082fc82470"))
+
+Parsing robots.txt
+    Firstly, we need to interpret robots.txt to avoid downloading blocked URLs.
+    Python comes with the robotparser module that provides a single class, RobotFileParser,
+    which answers questions about whether or not a particular user agent can fetch a URL on
+    the Web site that published the robots.txt file.
